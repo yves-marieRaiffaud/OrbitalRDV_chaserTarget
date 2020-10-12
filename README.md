@@ -10,7 +10,8 @@ git clone https://github.com/yves-marieRaiffaud/OrbitalRDV_chaserTarget
 ## Running
 In matlab, open and run the `SimulinkLauncher.m`. It will open the `orbitGuidance_LVLH.slx` simulink file and start the simulation. Once simulation is complete, Matlab will plot and show the graphs coded in the `SimulinkLauncher.m` file.
 
-The followings figure have been made to confirm that the LVLH plot and the simulation propagator are working as expected
+The followings figures have been made to confirm that the LVLH plot and the simulation propagator are working as expected.
+
 Assumptions for the results hereunder:
 * Start positions for both the chaser and the target are the same (explaining why the chaser trajectory in figure 2 starts at the origin/the target position) 
 * Target is on a circular orbit with an apogee radius of 6578 km (200 km altitude) ==> orbital velocity of `7784 m/s`.
