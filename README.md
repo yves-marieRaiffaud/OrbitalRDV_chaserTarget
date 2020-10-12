@@ -14,7 +14,7 @@ The followings figure have been made to confirm that the LVLH plot and the simul
 Assumptions for the results hereunder:
 * Start positions for both the chaser and the target are the same (explaining why the chaser trajectory in figure 2 starts at the origin/the target position) 
 * Target is on a circular orbit with an apogee radius of 6578 km (200 km altitude) ==> orbital velocity of `7784 m/s`.
-* Chaser is initially on a near circular orbit (`7783 m/s`). At timestep 0, a boost of `100 m/s` is applied on the chaser. When the chaser is at timestep orbitalPeriod/2, a second boost of `100 m/s` is applied. As a result and after these 2 boosts, the chaser is slowly drifting at `1 m/s` with respect to the target.
+* Chaser is initially on a near circular orbit (`7783 m/s` at the same start altitude). At timestep 0, a boost of `100 m/s` is applied on the chaser. When the chaser is at timestep orbitalPeriod/2, a second boost of `100 m/s` is applied. As a result and after these 2 boosts, the chaser is slowly drifting at `1 m/s` with respect to the target.
 
 ![Alt text](https://github.com/yves-marieRaiffaud/OrbitalRDV_chaserTarget/blob/master/Screens/Chaser_Pos_LVLH_Frame.png "Chaser position in the LVLH frame - Chaser position relative to the target position")
 
