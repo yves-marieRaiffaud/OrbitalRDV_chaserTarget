@@ -21,10 +21,10 @@ vernalDir = [1 0 0]; % Vernal direction vector
 x0Chaser = [0 6578e3 0];
 v0Chaser = [7783 0 0];
 %===
-x0Target = [0 6578e3 0];
-v0Target = [7784 0 0];
+x0Target = [0 -6578e3 0];
+v0Target = [-7784 0 0];
 %=================================================
-simDuration = 8000; % Duration of the simulation in seconds
+simDuration = 7000; % Duration of the simulation in seconds
 timestep = 1; % in seconds
 model = 'orbitGuidance_LVLH';
 open_system(model)
@@ -58,15 +58,18 @@ clear XSphere YSphere ZSphere
 % Plotting LVLH Earth-Pointing Chaser Position
 figure('Name','LVLH-EP Chaser Position')
 plot(0,0,'ob','MarkerFaceColor','g','DisplayName','Target Position');
+
+p = plot(chaserPos_LVLH(:,1)/1000, chaserPos_LVLH(:,2)/1000,'r','DisplayName','Chaser Position');
+cmap = parula(N); % colormap, with N colors
+linewidth = 1.5; % desired linewidth
+xi = x(1)+linspace(0,1,N+1)*x(end); % interpolated x values
+yi = interp1(x,y,xi); % interpolated y values
 hold on
-p = plot(chaserPos_LVLH(:,1)/1000, chaserPos_LVLH(:,2)/1000,'DisplayName','Chaser Position');
-cd = [uint8(autumn(size(chaserPos_LVLH,1))*255) uint8(ones(size(chaserPos_LVLH,1),1))].';
-drawnow
-set(p.Edge, 'ColorBinding','interpolated', 'ColorData',cd)
-colormap(autumn);
-caxis([time(1) time(size(time,1))])
-c = colorbar('Location','southoutside');
-c.Label.String = 'Time (s)';
+for n = 1:size(chaserPos_LVLH(:,1))
+    plot(chaserPos_LVLH(n,1)/1000, chaserPos_LVLH(n,2)/1000, 'color', cmap(n,:), 'linewidth', linewidth);
+end
+
+
 ylim = get(gca,'ylim');
 xlim = get(gca,'xlim');
 quiver(0,0,0,-ylim(1)/2,'DisplayName','$\bar{X}$');
@@ -79,7 +82,6 @@ set(gca, 'YDir','reverse');
 xlabel('$\bar{X}$ (km)','Interpreter','Latex');
 ylabel('$\bar{Z}$ (km)','Interpreter','Latex')
 hl = legend('show');
-set(hl, 'Interpreter','latex');
 title('Chaser Position in Target LVLH Earth Pointing Frame');
 %=================================================
 figure('Name','Chaser velocity evolution')
