@@ -16,6 +16,8 @@ Assumptions for the results hereunder:
 * Target is on a circular orbit with an apogee radius of 6578 km (200 km altitude) ==> orbital velocity of `7784 m/s`.
 * Chaser is initially on a near circular orbit (`7783 m/s` at the same start altitude). At timestep 0, a boost of `100 m/s` is applied on the chaser. When the chaser is at timestep orbitalPeriod/2, a second boost of `100 m/s` is applied. As a result and after these 2 boosts, the chaser is slowly drifting at `1 m/s` with respect to the target.
 
+![Alt text](https://github.com/yves-marieRaiffaud/OrbitalRDV_chaserTarget/blob/master/Screens/SimulinkModel.png "Simulink model")
+
 ![Alt text](https://github.com/yves-marieRaiffaud/OrbitalRDV_chaserTarget/blob/master/Screens/Chaser_Pos_LVLH_Frame.png "Chaser position in the LVLH frame - Chaser position relative to the target position")
 
 ![Alt text](https://github.com/yves-marieRaiffaud/OrbitalRDV_chaserTarget/blob/master/Screens/Chaser_Vel_Evolution.png "Chaser velocities in the ECI frame (inertial frame)")
