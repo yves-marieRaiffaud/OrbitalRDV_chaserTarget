@@ -19,8 +19,8 @@ Assumptions for the results hereunder:
 
 ![Alt text](https://github.com/yves-marieRaiffaud/OrbitalRDV_chaserTarget/blob/master/Screens/SimulinkModel.png "Simulink model")
 
-![Alt text](https://github.com/yves-marieRaiffaud/OrbitalRDV_chaserTarget/blob/master/Screens/Chaser_Pos_LVLH_Frame.png "Chaser position in the LVLH frame - Chaser position relative to the target position")
+![Alt text](https://github.com/yves-marieRaiffaud/OrbitalRDV_chaserTarget/blob/master/Screens/Chaser_Pos_LVLH.png "Chaser position in the LVLH frame - Chaser position relative to the target position")
 
-![Alt text](https://github.com/yves-marieRaiffaud/OrbitalRDV_chaserTarget/blob/master/Screens/Chaser_Vel_Evolution.png "Chaser velocities in the ECI frame (inertial frame)")
+![Alt text](https://github.com/yves-marieRaiffaud/OrbitalRDV_chaserTarget/blob/master/Screens/Chaser_Vel_Evo.png "Chaser velocities in the ECI frame (inertial frame)")
 
-![Alt text](https://github.com/yves-marieRaiffaud/OrbitalRDV_chaserTarget/blob/master/Screens/Orbit_Traj.png "Chaser and target trajectories aournd the Earth, with the positions of the 2 chaser's boosts.")
+![Alt text](https://github.com/yves-marieRaiffaud/OrbitalRDV_chaserTarget/blob/master/Screens/Orbits_Traj.png "Chaser and target trajectories aournd the Earth, with the positions of the 2 chaser's boosts.")
